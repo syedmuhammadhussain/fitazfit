@@ -1,0 +1,142 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+// Dark Layout
+.dark-layout {
+	.header-navbar .navbar-container .nav .nav-item.nav-search .search-input.open {
+		background-color: #161d31;
+	}
+	.navbar-container {
+		.search-input {
+			.search-list {
+				li {
+					&.auto-suggestion {
+						&:hover {
+							background-color: $theme-dark-body-bg;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.default-layout {
+	.navbar-container .search-input.open input {
+		background: #f8f8f8;
+	}
+}
+
+.horizontal-menu {
+	// .navbar-container.content.container {
+	//   padding: 0.8rem .5rem;
+	// }
+	ul#main-menu-navigation > li > a {
+		color: inherit;
+	}
+}
+.horizontal-menu .navbar.header-navbar .navbar-container,
+.horizontal-menu .horizontal-menu-wrapper .header-navbar .navbar-container {
+	margin: 0 auto;
+	height: 62px;
+}
+.auth {
+	> li {
+		> a {
+			svg {
+				margin-right: 0.5rem;
+				height: 17px;
+				width: 17px;
+				font-size: 1.2rem;
+			}
+		}
+		> a:hover {
+			background: #f8f8f8;
+			border-radius: 4px;
+		}
+	}
+}
+.dark-layout {
+	.auth {
+		> li {
+			> a:hover {
+				background: #161d31;
+				border-radius: 4px;
+			}
+		}
+	}
+}
+.horizontal-layout.navbar-sticky .app-content {
+	padding: calc(0rem + 4.45rem * 2) 2rem 0 2rem !important;
+}
+body {
+	.content-wrapper:not(.no-wrapper) {
+		margin-top: 2rem;
+	}
+	.swiper-container {
+		.swiper-button-prev,
+		.swiper-button-next {
+			top: 40%;
+		}
+	}
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background-color: #7367f0;
+}
+span.swiper-pagination-bullet + span.swiper-pagination-bullet {
+	margin-left: 6px;
+}
+span.swiper-pagination-bullet {
+	display: inline-block;
+	padding: 4px;
+	pointer-events: all;
+	position: relative;
+	background: #272f44;
+	border-radius: 100%;
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+}
+.dark-layout,
+.default-layout {
+	.swiper-slide {
+		text-align: center;
+		background: #272f44;
+		padding: 1.5rem 3rem;
+		border-radius: 0.428rem;
+		.rating,
+		.rating .fa {
+			color: #ff9f43;
+		}
+		.fa-star-o:before {
+			content: "" !important;
+		}
+	}
+}
+.default-layout {
+	.swiper-slide {
+		background: #fff;
+	}
+	span.swiper-pagination-bullet {
+		background: #dad8e7;
+	}
+}
+.hero-slider {
+	margin-left: -2rem;
+	margin-right: -2rem;
+	.card {
+		border-radius: 0;
+		.card-body {
+			// background: linear-gradient(
+			//     118deg,#7367f0,rgba(115,103,240,.7));
+			background: linear-gradient(118deg, #161d31f2, rgb(40 48 70 / 81%));
+		}
+	}
+}

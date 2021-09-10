@@ -1,0 +1,11 @@
+@import "@core/scss/angular/libs/swiper.component.scss";
+.no-wrapper {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    .carousel-img-wrapper img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+

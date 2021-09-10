@@ -1,0 +1,13 @@
+<!-- Main menu -->
+<div class="container navbar-container main-menu-content">
+  <ul class="nav navbar-nav" id="main-menu-navigation" layout="horizontal" core-menu></ul>
+  <ul class="nav navbar-nav ml-auto auth">
+    <li class="ng-star-inserted" *ngIf="!userLoggedIn">
+      <a (click)="redirect()" class="dropdown-item d-flex align-items-center ng-star-inserted">
+        <i data-feather="log-in"></i> 
+        <span class="ng-star-inserted"> Login</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!--/ Main menu -->
